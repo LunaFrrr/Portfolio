@@ -1,29 +1,49 @@
+.simple-linear {
+  background: linear-gradient(#000000 , #3a0ca3);
+}
+
+li {
+    display: flex;
+    flex-direction: row; 
+    align-items: left; 
+    justify-content: flex;
+}
+
+.info-text { 
+  margin: 1cm;
+  flex-direction: column; 
+} 
+
 .css-typing {
     display: flex;
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
-    height: 100vh;
+    height: 40vh;
+    /* display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;  */
   }
   
-  .css-typing p {
-    border-right: .15em solid orange;
-    font-family: "Courier";
-    font-size: 14px;
+  .css-typing h1 {
+    border-right: .15em solid #f7518b ;
+    /* font-family: "Courier";
+    font-size: 14px; */
     white-space: nowrap;
     overflow: hidden;
   }
   
-  .css-typing p:nth-child(1) {
-    width: 4em; /*Ancho del efecto de la animación*/
+  .css-typing h1:nth-child(1) {
+    width: 3.5em; /*Ancho del efecto de la animación*/
     -webkit-animation: type 1s steps(40, end);
     animation: type 1s steps(40, end);
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
   }
   
-  .css-typing p:nth-child(2) {
-    width: 9.5em;
+  .css-typing h1:nth-child(2) {
+    width: 8.8em;
     opacity: 0;
     -webkit-animation: type2 2s steps(40, end);
     animation: type2 2s steps(40, end);
@@ -33,8 +53,8 @@
     animation-fill-mode: forwards;
   }
   
-  .css-typing p:nth-child(3) {
-    width: 12.5em;
+  .css-typing h1:nth-child(3) {
+    width: 11.2em;
     opacity: 0;
     -webkit-animation: type3 2s steps(40, end), blink .5s step-end infinite alternate;
     animation: type3 2s steps(40, end), blink .5s step-end infinite alternate;
@@ -49,7 +69,7 @@
       width: 0;
     }
     99.9% {
-      border-right: .15em solid orange;
+      border-right: .15em solid #f7518b;
     }
     100% {
       border: none;
@@ -61,7 +81,7 @@
       width: 0;
     }
     99.9% {
-      border-right: .15em solid orange;
+      border-right: .15em solid #f7518b ;
     }
     100% {
       border: none;
@@ -76,7 +96,7 @@
       opacity: 1;
     }
     99.9% {
-      border-right: .15em solid orange;
+      border-right: .15em solid #f7518b ;
     }
     100% {
       opacity: 1;
@@ -92,7 +112,7 @@
       opacity: 1;
     }
     99.9% {
-      border-right: .15em solid orange;
+      border-right: .15em solid #f7518b ;
     }
     100% {
       opacity: 1;
@@ -135,4 +155,30 @@
       border-color: transparent;
     }
   }
+
+  .pink-text {
+    color: #ff66b2;
+  }
   
+  .div-classes {
+    color: white;
+    font-size: 14px;
+    flex-direction: column; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    font-family: 'Fira Code', monospace;
+  }
+
+  .li-project {
+    justify-content: center;
+    width: 75px;
+    background-color: #000000;
+    border-radius: 9999px;
+    padding: 5px;
+  }
+
+  .img-project {
+    border-radius: 5%;
+    margin: 1cm;
+  }
