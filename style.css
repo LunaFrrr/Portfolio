@@ -11,7 +11,8 @@ li {
 
 .info-text { 
   margin: 1cm;
-  flex-direction: column; 
+  flex-direction: column;   
+  width: 500px;
 } 
 
 .css-typing {
@@ -20,10 +21,6 @@ li {
     align-items: center; 
     justify-content: center; 
     height: 40vh;
-    /* display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center;  */
   }
   
   .css-typing h1 {
@@ -170,15 +167,78 @@ li {
     font-family: 'Fira Code', monospace;
   }
 
-  .li-project {
+  .ul-languages {
+    justify-content: flex-start;
+    flex-direction: row; 
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+
+  .li-game-options {
+    align-items: center; 
+    justify-content: center; 
+    width: 175px;
+    border-radius: 9999px;
+    padding: 0px;
+    margin-right: 5px;
+    margin-left: 0;
+    display: flex;
+    list-style: none;
+
+  }
+
+  a {
+    font-family: 'Fira Code', monospace;
+    width: 150px;
+    height: 40px;
+    color: white;
+    font-size: 14px;
+    background-color: #ff66b2;
+    border-radius: 5px;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    border-color: #f7518b;
+    border-width: 0.05cm;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: #f7518b;
+    text-decoration: none;
+  }
+
+  .li-project {
+    align-items: center; 
+    justify-content: center; 
     width: 75px;
     background-color: #000000;
     border-radius: 9999px;
     padding: 5px;
+    margin: 2px;
+    display: flex;
+    list-style: none;
+  }
+
+  .li-larger-project {
+    align-items: center; 
+    justify-content: center; 
+    width: 135px;
+    background-color: #000000;
+    border-radius: 9999px;
+    padding: 5px;
+    margin: 2px;
+    display: flex;
+    list-style: none;
   }
 
   .img-project {
     border-radius: 5%;
     margin: 1cm;
   }
+
+  .lighter-text {
+    color: #f6a9c4;
+  }
+ 
