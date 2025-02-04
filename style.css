@@ -25,8 +25,6 @@ li {
   
   .css-typing h1 {
     border-right: .15em solid #f7518b ;
-    /* font-family: "Courier";
-    font-size: 14px; */
     white-space: nowrap;
     overflow: hidden;
   }
@@ -159,6 +157,7 @@ li {
   
   .div-classes {
     color: white;
+    margin: 200px;
     font-size: 14px;
     flex-direction: column; 
     display: flex;
@@ -238,7 +237,27 @@ li {
     margin: 1cm;
   }
 
+  .div-experience {
+    width: 200px;
+    margin-right: 100px;
+  }
+
   .lighter-text {
     color: #f6a9c4;
   }
  
+  .footer {
+    background-color: #222;
+    color: white; 
+    text-align: center; 
+    margin: 0;
+    padding: 10px 0; 
+    width: 100%;
+    font-family: 'Fira Code', monospace;
+  }
+
+  
+
+body {
+  margin: 0;
+}
