@@ -10,7 +10,7 @@ li {
 }
 
 .info-text { 
-  margin: 1cm;
+  margin: 0cm;
   flex-direction: column;   
   width: 500px;
 } 
@@ -172,25 +172,26 @@ li {
     display: flex;
     list-style: none;
     padding: 0;
+    margin: 0;
   }
 
   .li-game-options {
-    align-items: center; 
-    justify-content: center; 
-    width: 175px;
+    align-items: flex-start; 
+    justify-content: left; 
     border-radius: 9999px;
     padding: 0px;
-    margin-right: 5px;
-    margin-left: 0;
     display: flex;
     list-style: none;
-
+    display: flex;
+    flex-direction: row; 
   }
+  
 
   a {
     font-family: 'Fira Code', monospace;
     width: 150px;
     height: 40px;
+    margin-right: 15px;
     color: white;
     font-size: 14px;
     background-color: #ff66b2;
@@ -256,8 +257,6 @@ li {
     font-family: 'Fira Code', monospace;
   }
 
-  
-
-body {
-  margin: 0;
-}
+  body {
+    margin: 0;
+  }
