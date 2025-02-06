@@ -7,6 +7,14 @@
     <link rel="icon" href="images/icon/icon.png">
     <link rel="stylesheet" href="style.css">
 <body class="simple-linear">
+  <header>
+    <nav>
+      <a href="#about-me" class="a-header">About Me</a>
+      <a href="#projects" class="a-header">Projects</a>
+      <a href="#experience" class="a-header">Experience</a>
+      <a href="#contact" class="a-header">Contact</a>
+    </nav>
+  </header>
     <div class="css-typing div-classes">
         <h1>
           Hello!
@@ -18,16 +26,18 @@
           I'm a <span class="pink-text">Game Developer</span>
         </h1>
       </div>
-      <div class="div-classes">
+      <div id="about-me" class="div-classes">
         <h2>About Me</h2>
       </div>
-      <div class="div-classes">
+      <div id="projects" class="div-classes">
         <h2>Projects</h2>
         <div>
           <ol>
             <li>
-              <img height="300" class="img-project" src="images/projects/speed-bubble.png" alt="Speed-Bubble">
-              <div class="info-text">
+              <div class="container-img">
+                <img height="300" class="img-project" src="images/projects/speed-bubble.png" alt="Speed-Bubble">
+              </div>
+              <div class="info-text-projects">
                 <h3>Speed Bubble</h3>
                 <div>
                   <ul class="ul-languages">
@@ -41,24 +51,26 @@
                   <br><br> <span class="lighter-text">Winner of "Best Art" and "Best Adaptation to the Theme" at Valencia Game Jam 25'!</span>
                 </p>
                 <div class="li-game-options">
-                  <a href="https://remullagames.itch.io/speed-bubble">
-                    <img class="img-button" width="20" src="images/buttons/itchio.svg" alt="Github">
+                  <a class="a-project" href="https://remullagames.itch.io/speed-bubble">
+                    <img class="img-button" width="20" src="images/buttons/itchio.svg" alt="Itchio">
                     <span>Play</span>
                   </a>
-                  <a href="https://github.com/LunaFrrr/SpeedBubbles">
+                  <a class="a-project" href="https://github.com/LunaFrrr/SpeedBubbles">
                     <img class="img-button" width="20" src="images/buttons/github.svg" alt="Github">
                     <span>GitHub</span>
                   </a>
-                  <a href="https://www.youtube.com/watch?v=7SY9zd5mtcc">
-                    <img class="img-button" width="20" src="images/buttons/youtube.svg" alt="Github">
+                  <a class="a-project" href="https://www.youtube.com/watch?v=7SY9zd5mtcc">
+                    <img class="img-button" width="20" src="images/buttons/youtube.svg" alt="Youtube">
                     <span>View</span>
                   </a>
                 </div>
               </div>
             </li>
             <li>
-              <img height="245" class="img-project" src="images/projects/travegamers.PNG" alt="Speed-Bubble">
-              <div class="info-text">
+              <div class="container-img">
+                <img height="285" class="img-project" src="images/projects/travegamers.PNG" alt="Travegamers">
+              </div>
+              <div class="info-text-projects">
                 <h3>Travegamers</h3>
                 <div>
                   <ul class="ul-languages">
@@ -74,15 +86,17 @@
                 </div>
                 <p>An educational game to improve your level of English. The mechanics have been based on the official Cambridge exam formats so that what is taught during the game experience is closer to the type of exercises found in the exams to obtain the B2 certificate of English.
                 </p>
-                <a href="https://github.com/LunaFrrr/Travegamers">
+                <a class="a-project" href="https://github.com/LunaFrrr/Travegamers">
                   <img class="img-button" width="20" src="images/buttons/github.svg" alt="Github">
                   <span>GitHub</span>
                 </a>
               </div>
             </li>
             <li>
-              <img height="245" class="img-project" src="images/projects/lotus.png" alt="Speed-Bubble">
-              <div class="info-text">
+              <div class="container-img">
+                <img height="245" class="img-project" src="images/projects/lotus.png" alt="Lotus">
+              </div>
+              <div class="info-text-projects">
                 <h3>Lotus</h3>
                 <div>
                   <ul class="ul-languages">
@@ -94,7 +108,7 @@
                 </div>
                 <p>A graphic adventure that takes place in Kuroishi, one of Tokyo's new red-light districts. Lotus is a game inspired by the research of the Perinatal Epidemiological and Environmental Health group of University Jaime I.
                 </p>
-                    <a href="https://bitbucket.org/LunaFerrer/lotus/src/master/">
+                    <a class="a-project" href="https://bitbucket.org/LunaFerrer/lotus/src/master/">
                       <img class="img-button" width="20" src="images/buttons/github.svg" alt="Github">
                       <span>GitHub</span>
                     </a>
@@ -102,7 +116,7 @@
             </li>
           </ol>
         </div>
-        <div class="div-classes">
+        <div id="experience" class="div-classes">
           <h2>Experience</h2>
           <ol>
             <li>
@@ -142,7 +156,6 @@
               </div>
             </li>
         </div>
-
       </div>
 </body>
 <footer>
