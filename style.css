@@ -198,8 +198,8 @@ p-experince {
 
   .about {
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: flex-start;
     text-align: justify;
     margin: 0;
   }
@@ -210,11 +210,30 @@ p-experince {
     background-color: black;
     border-radius: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2cm;
+    border: 0.06cm solid white;
+  }
+
+  .social:hover {
+    width: 50px;
+    height: 50px;
+    background-color: #f7518b;
+    border-radius: 100%;
+    display: flex;
     margin: 0.2cm;
   }
 
+  .about-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 60px;
+  }
+
   .p-about {
-    margin: 60px;
+    margin-inline: 60px;
   }
   
   .div-classes {
@@ -255,7 +274,10 @@ p-experince {
     align-items: flex-end;
   }
 
-  
+  .img-button {
+    margin-left: 15px;
+    margin-right: 25px;
+  }
   
 
   .a-project {
@@ -344,7 +366,3 @@ p-experince {
     margin: 0;
   }
 
-  .img-button {
-    margin-left: 15px;
-    margin-right: 25px;
-  }
