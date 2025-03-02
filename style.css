@@ -268,11 +268,7 @@ p-experince {
     
   }
 
-  .container-img {
-    width: 500px;
-    display: flex;
-    align-items: flex-end;
-  }
+
 
   .img-button {
     margin-left: 15px;
@@ -325,6 +321,35 @@ p-experince {
     list-style: none;
   }
 
+.image-me{
+  border-radius: 5%;
+  margin-right: 1cm;
+}
+
+.container-img {
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 10px; 
+  position: relative;
+  width: 400px;
+  height: 770;
+  margin-right: 1cm;
+}
+
+.img-project {
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container-img:hover .img-project {
+  transform: scale(1.1);
+}
+
   .li-larger-project {
     align-items: center; 
     justify-content: center; 
@@ -337,11 +362,6 @@ p-experince {
     list-style: none;
   }
 
-  .img-project {
-    border-radius: 5%;
-    margin-right: 1cm;
-
-  }
 
   .div-experience {
     width: 200px;
