@@ -146,6 +146,13 @@ nav {
   animation: type3 2s steps(40, end) 5s forwards, blink .5s step-end infinite alternate 5s;
 }
 
+@media (max-width: 600px) {
+  /* Reduces size when using phone to make the text fit */
+  .css-typing h1 {
+    font-size: clamp(1rem, 5.5vw, 1.6rem);
+  }
+}
+
 @keyframes type { 0% { width: 0; } 99.9% { border-right: .15em solid #f7518b; } 100% { border: none; } }
 @keyframes type2 { 0% { width: 0; } 1% { opacity: 1; } 99.9% { border-right: .15em solid #f7518b; } 100% { opacity: 1; border: none; } }
 @keyframes type3 { 0% { width: 0; } 1% { opacity: 1; } 100% { opacity: 1; } }
