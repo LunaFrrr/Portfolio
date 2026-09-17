@@ -104,7 +104,6 @@ nav {
 .div-classes {
   color: #e2e8f0;
   margin: 60px auto;
-  padding: 0 20px;
   width: 100%;
   max-width: 1250px;
   display: flex;
@@ -127,6 +126,7 @@ nav {
   white-space: nowrap;
   overflow: hidden;
   max-width: 100%;
+
 }
 
 .css-typing h1:nth-child(1) {
