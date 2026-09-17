@@ -112,6 +112,9 @@ nav {
   justify-content: center;
 }
 
+/* ==========================================
+   TYPING EFFECT
+   ========================================== */
 .css-typing {
   display: flex;
   flex-direction: column;
@@ -119,37 +122,55 @@ nav {
   justify-content: center;
   min-height: 35vh;
   text-align: center;
+  width: 100%;
 }
 
 .css-typing h1 {
   border-right: .15em solid #f7518b;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 100%;
-
+  margin: 0.15em auto;
 }
 
 .css-typing h1:nth-child(1) {
-  width: 3.5em;
-  animation: type 1s steps(40, end) forwards;
+  width: 7ch;
+  animation: type1 0.42s steps(6, end) forwards;
 }
 
 .css-typing h1:nth-child(2) {
-  width: 9.5em;
+  width: 15ch;
   opacity: 0;
-  animation: type2 2s steps(40, end) 2s forwards;
+  animation: type2 1.05s steps(15, end) 0.7s forwards;
 }
 
 .css-typing h1:nth-child(3) {
-  width: 12.5em;
+  width: 21ch;
   opacity: 0;
-  animation: type3 2s steps(40, end) 5s forwards, blink .5s step-end infinite alternate 5s;
+  animation: type3 1.47s steps(21, end) 2.1s forwards, blink .5s step-end infinite alternate 2.1s;
 }
 
+@keyframes type1 { 
+  0% { width: 0; } 
+  99.9% { border-right: .15em solid #f7518b; } 
+  100% { border-right: none; } 
+}
+
+@keyframes type2 { 
+  0% { width: 0; opacity: 1; } 
+  99.9% { border-right: .15em solid #f7518b; opacity: 1; } 
+  100% { border-right: none; opacity: 1; } 
+}
+
+@keyframes type3 { 
+  0% { width: 0; opacity: 1; } 
+  100% { opacity: 1; } 
+}
+
+
+
 @media (max-width: 600px) {
-  /* Reduces size when using phone to make the text fit */
   .css-typing h1 {
-    font-size: clamp(1rem, 5.5vw, 1.6rem);
+    font-size: clamp(1rem, 4.8vw, 1.5rem) !important;
   }
 }
 
